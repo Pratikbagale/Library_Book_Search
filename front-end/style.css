@@ -1,0 +1,124 @@
+/* General styles */
+
+
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #9b9b9b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Title styles */
+.text {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Input field styles */
+.custom-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #04a3ec;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.2);
+}
+
+/* Button styles */
+#searchButton {
+    padding: 10px 12px;
+    background-color: #47ace7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#searchButton:hover {
+    background-color: #767577;
+    transform: translateY(-2px);
+}
+
+#searchButton:active {
+    transform: translateY(0);
+    background-color: #47a1d4;
+}
+
+/* Results list styles */
+.results-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    /* Space below search inputs */
+    width: 100%;
+    max-width: 600px;
+}
+
+.result-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image container styles */
+.img-container {
+    text-align: center;
+    margin-top: 30px;
+    /* Ensures space above the image */
+    position: relative;
+    /* Keeps it in a relative position */
+    width: 600px;
+    height: 900px;
+    padding-left: 350px;
+}
+
+/* Ensure the image is displayed properly */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .custom-input,
+    #searchButton {
+        width: 90%;
+    }
+
+    .results-list {
+        max-width: 90%;
+    }
+
+    .img-container {
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,15 @@
+1.step
+create new folder library book
+2.step
+check the nodejs in your laptop open cmd and node --version || npm --version
+open folder terminal in vscode and enter the cammand 
+1.npm init -y
+npm install express cors axios
+3.step
+run the file in terminal node server.js
+4.step
+install extensions in vscode
+html || css || live server
+
+*Any doubt to contact pratik.......
+
